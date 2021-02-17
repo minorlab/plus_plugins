@@ -20,7 +20,7 @@ class PackageInfoPlugin extends PackageInfoPlatform {
     final url =
         '${Uri.parse(window.document.baseUri).removeFragment()}version.json';
 
-    final response = await get(Uri.parse(url);
+    final response = await get(Uri.parse(url));
     if (response.statusCode == 200) {
       try {
         final versionMap = jsonDecode(response.body);
